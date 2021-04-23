@@ -1,0 +1,264 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    font-family:normal, Helvetica;
+}
+
+/* Iniciando Mobile First*/
+
+/* bg header apenas de backgoround com imagem rotada */
+.bg-header{
+    background-color: #707070;
+    width: 342%;
+    height: 546px;
+    position: absolute;
+    top: 0;
+    transform: skewX(74deg);
+    z-index: -2;
+
+}
+/* header */
+.header{
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+    padding-top: 66px;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.header span{
+    margin-left: 16px;
+    font-size: 21px;
+    opacity: 1;
+}
+
+.header h1{
+    margin-left: 16px;
+    font-size: 41px;
+    margin-bottom: 3px;
+    opacity: 1;
+}
+.header p{
+    margin-left: 16px;
+    font-size: 15px;
+    opacity: 1;
+    width: 90%;
+}
+
+.links{
+    padding-top: 36px;
+    padding-bottom: 88px;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 8%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button{
+    cursor: pointer;
+    width: 160px;
+    margin-right: 27px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    height: 40px;
+    box-shadow: 0px 1px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+    color: #888888;
+}
+ /* News */
+.contentNews{
+    width: 100%;
+    color: #888888;
+}
+
+.news{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.news h2{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.news p{
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+ /* form */
+.formulario{
+    width: 90%;
+    margin: 0 auto;
+    display:block;
+    margin-bottom: 90px;
+}
+
+.input1{
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 34px;
+}
+
+.label1{
+    font-size: 14px;
+}
+
+.genero{
+    display: flex;
+    height: 15px;
+}
+
+.btnform{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    background-color: transparent;
+    color: #888888;
+    height: 39px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.genero label{
+    margin-right: 40px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.genero input{
+    margin-right: 5px;
+}
+
+/* products api */
+.contentProduct{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.contentProduct span{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: #707070;
+    color: #707070;
+    height: 1px;
+    z-index: -1;
+}
+
+.contentProduct h2{
+    color: #888888;
+    font-size: 18px;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: #ffffff;
+}
+
+/*Api*/
+
+.productApi{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 130px;
+    align-items: center;
+}
+
+.productApi h1{
+    color: #888888 ;
+}
+
+.share{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    margin-bottom: 28px;
+}
+
+.share span{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: #707070;
+    color: #707070;
+    height: 1px;
+    z-index: -1;
+}
+
+.share h2{
+    color: #888888;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #ffffff;
+}
+
+.sharecontent{
+    width: 90%;
+    margin: 0 auto;
+    display:block;
+    margin-bottom: 85px;
+    color: #888888;
+}
+
+.p{
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.btnformShare{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 260px;
+    background-color: transparent;
+    color: #888888;
+    height: 39px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.btn{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+.footer{
+    height: 157px;
+    width: 100%;
+    overflow: hidden;
+    color: #ffffff;
+    position: relative;
+}
+
+.bgFooter{
+    background-color: #707070;
+    width: 334%;
+    height: 123%;
+    position: absolute;
+    bottom: 0;
+    transform: skewX(-82deg);
+    z-index: -2;
+}
+
+.footer p{
+    font-size: 12px;
+    margin-top: 70px;
+    text-align: center;
+}
