@@ -370,7 +370,7 @@
 }
     
 /* Responsivo para desktop */
-@media (min-width: 920px){
+@media (min-width: 970px){
     .contentEmail{
         display: none;
     }
@@ -384,7 +384,6 @@
     .header{
         height: 366px;
         padding-top: 61px;
-        width: 105%;
     }
 
     .header span{
@@ -402,10 +401,6 @@
 
     .bg-header{
         height: 532px;
-    }
-
-    .footer{
-        width: 105%;
     }
 
     .bgFooter{
