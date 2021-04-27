@@ -10,7 +10,7 @@
 /* bg header apenas de backgoround com imagem rotada */
 .bg-header{
     background-color: #707070;
-    width: 400%;
+    width: 500%;
     height: 546px;
     position: absolute;
     top: 0;
@@ -59,7 +59,7 @@
 
 .button{
     cursor: pointer;
-    width: 160px;
+    width: 153px;
     margin-right: 27px;
     background-color: #ffffff;
     margin-top: 20px;
@@ -291,7 +291,7 @@
 
 .bgFooter{
     background-color: #707070;
-    width: 334%;
+    width: 500%;
     height: 123%;
     position: absolute;
     bottom: 0;
@@ -410,6 +410,10 @@
 
     .footer p{
         font-size: 14px;
+    }
+
+    .button{
+        width: 160px;
     }
 
     .contentNews{
