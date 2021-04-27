@@ -59,7 +59,7 @@
 
 .button{
     cursor: pointer;
-    width: 153px;
+    width: 160px;
     margin-right: 27px;
     background-color: #ffffff;
     margin-top: 20px;
@@ -410,10 +410,6 @@
 
     .footer p{
         font-size: 14px;
-    }
-
-    .button{
-        width: 160px;
     }
 
     .contentNews{
