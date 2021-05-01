@@ -37,28 +37,33 @@
                   magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.</p>
         </div>
         <div class="form">
-            <form class="formulario">
+            <form class="formulario" onsubmit="validarForm(); return false">
                 <div class="nome">
                 <label class="label1" >Seu nome:</label>
-                <input class="input1" type="text" name="" id="">
+                <input class="input1" id="input1" type="text">
+                <p id="errorFormNome" class="errorForm">Preencha este campo!</p>
                 </div>
                 <div class="email">
                 <label class="label1">E-mail</label>
-                <input class="input1" type="text">
+                <input class="input1" id="input1" type="email">
+                <p id="errorForm" class="errorForm">Preencha este campo!</p>
                 </div>
                 <div class="cpf">
                 <label class="label1" >CPF:</label>
-                <input class="input1" type="text">
+                <input class="input1" id="input3" type="text">
+                <p id="errorFormCpf" class="errorForm">Preencha este campo!</p>
                 </div>
                 <div class="genero">
                     <label>
-                        <input type="radio" value="masculino">masculino
+                        <input type="radio" value="masculino" id="masculino">masculino
                     </label>
                     <label>
-                        <input type="radio" value="feminino">feminino
+                        <input type="radio" value="feminino" id="feminino">feminino
                     </label>
+                    <p id="errorFormGenero" class="errorForm">Preencha este campo!</p>
                 </div>
-                <button class="btnform">Enviar</button>
+                <p id="errorForm" class="errorForm">Preencha este campo!</p>
+                <button class="btnform" id="btnform">Enviar</button>
             </form>
         </div>
         
@@ -71,35 +76,36 @@
         <h1>Olá Fulano</h1>
         <p>Fizemos uma lista especial de produtos apenas para você. Isso mesmo: nesta lista, temos só produtos que você pode gostar. Seu amigo Ciclano lhe recomendou essa lista especial. Olha só:</p>
     </div>
-    <div class="productApi">
+    <div class="productApi" id="productApi">
         <h1>Div api (buscar)</h1>
     </div>
     <div class="share">
         <h2>Compartilhe a novidade</h2>
         <span>,</span>
     </div>
-    <div class="sharecontent">
+    <form class="sharecontent" onsubmit="validarFormShare(); return false">
         <div class="p">
         <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
         </div>
     <div class="sharelabels">
         <div class="lb1">
         <label class="label1" >Nome do seu amigo:</label>
-            <input class="input1" type="text" name="" id="">
+            <input class="input1" type="text" id="input4">
+            <p id="errorFriend" class="errorForm">Preencha este campo!</p>
         </div>
         <div class="lb2">
         <label class="label1">E-mail dele</label>
-            <input class="input1" type="text">
+            <input class="input1" id="input5" type="email" required>
         </div>
         </div>
-        <div class="btn">
-            <button class="btnformShare">Enviar agora</button>
+        <div class="btn" id="btnShare">
+            <button class="btnformShare" id="btnFormShare">Enviar agora</button>
         </div>
-    </div>
+    </form>
     <div class="footer">
         <div class="bgFooter"></div>
         <p>Testando suas habilidades em <span>HTML, CSS E JS.</span><br>Linx impulse<br/>2019</p>
     </div>
-
+<script src="./js/main.js"></script>
 </body>
 </html>

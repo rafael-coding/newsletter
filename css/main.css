@@ -114,6 +114,10 @@
     margin-bottom: 34px;
 }
 
+.input1:focus{
+    border: 2px solid #818080;
+}
+
 .label1{
     font-size: 14px;
 }
@@ -123,6 +127,12 @@
     height: 15px;
 }
 
+.errorForm{
+    color: red;
+    text-align: right;
+    display: none;
+}
+
 .btnform{
     cursor: pointer;
     margin-top: 20px;
@@ -130,7 +140,7 @@
     background-color: transparent;
     color: #888888;
     height: 39px;
-    border: 1px solid #707070;
+    border: 1px solid #888888;
     border-radius: 4px;
     opacity: 1;
 }
