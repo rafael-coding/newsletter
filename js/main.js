@@ -10,8 +10,7 @@ const $inputCpf = document.querySelector('#input3');
 const $inputFriend = document.querySelector('#input4');
 const $btnShare = document.querySelector('#btnShare');
 const $masculino = document.querySelector('#masculino');
-const $feminino = document.querySelector('#feminino')
-
+const $feminino = document.querySelector('#feminino');
 
 /* variáveis globais e listiners */
 $btnForm.addEventListener('click', validarForm);
@@ -19,21 +18,26 @@ $inputName.addEventListener('keyup', validarInputName);
 $inputCpf.addEventListener('keyup', validarInputCpf);
 $inputFriend.addEventListener('keyup', validarInputFriend);
 
-
 /*chamando a api dos produtos */
-const productsList = () =>{
-    const url = "https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1"
+fetch("https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1")
+    .then(data => data.json())
+    .then((products) => createList (products))
 
-    fetch(url)
-        .then(response => response.json())
-        .then(products => {
-            console.log(products)
-        })
+const createList = (data) => {
+    const list = `
+    <div class="productsImg">
+        <img src="${data.products[0].image}" alt="imgProducts">
+    </div>
+    <div class="productsInfo">
+        <p>${data.products[0].name}</p>
+        <span>De: ${data.products[0].oldPrice}</span>
+        <h3>Por: R$${data.products[0].price}</h3>
+        <span>ou ${data.products[0].installments.count} de R$${data.products[0].installments.value}</span>
+    </div>`
+    const product = document.querySelector("#productApi")
+    product.innerHTML = list 
+    console.log(data)
 }
-
-productsList()
-
-
 
 /* validar campo nome do formulário */
 function validarInputName(){
