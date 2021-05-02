@@ -223,13 +223,13 @@
 .productsImg{
     height: 129px;
     width: 219px;
+    margin-left: 10px;
     border: 1px solid #707070;
 }
 
 .productsImg img{
     height: 100%;
     width: 100%;
-    margin-left: 10px;
 }
 
 .productsInfo{
