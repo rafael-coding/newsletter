@@ -213,9 +213,54 @@
 .productApi{
     display: flex;
     width: 100%;
+    margin-left: 10px;
+    margin-right: 18px;
     justify-content: center;
     height: 130px;
     align-items: center;
+}
+
+.productsImg{
+    height: 129px;
+    width: 219px;
+    border: 1px solid #707070;
+}
+
+.productsInfo{
+    margin-left: 23px;
+    display: block;
+    color: #888888;
+}
+
+.productsInfo p{
+    font-size: 1rem;
+}
+
+.productsInfo h3{
+
+}
+
+.productsInfo span{
+    font-size: 0.8rem;
+}
+
+.btnComprar{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 200px;
+    background-color: transparent;
+    color: #888888;
+    height: 30px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.btnComprar:hover{
+    background-color: #888888;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: 0.4s;
 }
 
 .productApi h1{
