@@ -213,8 +213,6 @@
 .productApi{
     display: flex;
     width: 100%;
-    margin-left: 10px;
-    margin-right: 18px;
     justify-content: center;
     height: 130px;
     align-items: center;
