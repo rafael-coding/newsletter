@@ -32,7 +32,7 @@ const createList = (data) => {
         <p>${data.products[0].name}</p>
         <span>De: ${data.products[0].oldPrice}</span>
         <h3>Por: R$${data.products[0].price}</h3>
-        <span>ou ${data.products[0].installments.count} de R$${data.products[0].installments.value}</span>
+        <span>ou ${data.products[0].installments.count}x de R$${data.products[0].installments.value}</span>
     </div>`
     const product = document.querySelector("#productApi")
     product.innerHTML = list 
