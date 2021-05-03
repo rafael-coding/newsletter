@@ -211,16 +211,22 @@
 /*Api*/
 
 .productApi{
+    display: block;
+    width: 100%;
+}
+
+.listApi{
     display: flex;
     width: 100%;
     justify-content: center;
     height: 130px;
+    margin-bottom: 30px;
     align-items: center;
 }
 
 .productsImg{
     height: 129px;
-    width: 219px;
+    width: 249px;
     margin-left: 10px;
     border: 1px solid #707070;
 }

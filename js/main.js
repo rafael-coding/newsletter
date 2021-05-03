@@ -23,22 +23,24 @@ fetch("https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?pag
     .then(data => data.json())
     .then((products) => createList (products))
 
-const createList = (data) => {
-    const list = `
-    <div class="productsImg">
-        <img src="${data.products[0].image}" alt="imgProducts">
-    </div>
-    <div class="productsInfo">
-        <p>${data.products[0].name}</p>
-        <span>De: R$${data.products[0].oldPrice}</span>
-        <h3>Por: R$${data.products[0].price}</h3>
-        <span>ou ${data.products[0].installments.count}x de R$${data.products[0].installments.value}</span>
-        <button class="btnComprar" id="btnComprar">Comprar</button>
-    </div>`
-    const product = document.querySelector("#productApi")
-    product.innerHTML = list 
-    console.log(data)
-}
+
+function createList (data){
+        for (let i = 0; i < data.products.length; i ++)
+        document.querySelector("#productApi").innerHTML +=`
+            <div class="listApi">
+                <div class="productsImg">
+                    <img src="${data.products[i].image}" alt="imgProducts">
+                </div>
+                <div class="productsInfo">
+                    <p>${data.products[i].name}</p>
+                    <span>De: R$${data.products[i].oldPrice}</span>
+                    <h3>Por: R$${data.products[i].price}</h3>
+                    <span>ou ${data.products[i].installments.count}x de R$${data.products[i].installments.value}</span>
+                    <button class="btnComprar" id="btnComprar">Comprar</button>
+                </div>
+            </div>`
+        console.log(data)
+    }
 
 /* validar campo nome do formulário */
 function validarInputName(){
