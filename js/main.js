@@ -33,10 +33,10 @@ function createList (data){
                 </div>
                 <div class="productsInfo">
                     <p>${data.products[i].name}</p>
-                    <spam class="description">${data.products[i].description}</span>
-                    <span>De: R$${data.products[i].oldPrice}</span>
-                    <h3>Por: R$${data.products[i].price}</h3>
-                    <span>ou ${data.products[i].installments.count}x de R$${data.products[i].installments.value}</span>
+                    <h4 class="description">${data.products[i].description}</h4>
+                    <span class="oldPrice">De: R$${data.products[i].oldPrice}</span>
+                    <h3 class="price">Por: R$${data.products[i].price}</h3>
+                    <span class="count">ou ${data.products[i].installments.count}x de R$${data.products[i].installments.value}</span>
                     <button class="btnComprar" id="btnComprar">Comprar</button>
                 </div>
             </div>`
