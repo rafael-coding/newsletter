@@ -226,6 +226,8 @@
 
 .productsImg{
     height: 129px;
+    justify-content: center;
+    display: flex;
     width: 249px;
     margin-left: 10px;
     border: 1px solid #707070;
