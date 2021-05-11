@@ -40,8 +40,14 @@ function createList (data){
                     <button class="btnComprar" id="btnComprar">Comprar</button>
                 </div>
             </div>`
-        console.log(data)
     }
+
+
+/* chamando next page da api */
+function pagination(data){
+    console.log(data.products[i].name)
+}
+
 
 /* validar campo nome do formulário */
 function validarInputName(){
