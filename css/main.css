@@ -611,6 +611,10 @@
         width: 920px;
     }
 
+    .btnMoreProducts {
+        width: 260px;
+    }
+
     .btnApi {
         margin-bottom: 140px;
         margin-top: 52px;
