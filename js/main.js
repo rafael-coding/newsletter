@@ -45,7 +45,7 @@ function createList (data){
 
 /* chamando next page da api */
 function pagination(data){
-    console.log(data.products[i].name)
+    alert("vc me clicou! iniciando paginação da api")
 }
 
 
