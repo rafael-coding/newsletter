@@ -33,6 +33,7 @@ function createList (data){
                 </div>
                 <div class="productsInfo">
                     <p>${data.products[i].name}</p>
+                    <spam>${data.products[i].description}</span>
                     <span>De: R$${data.products[i].oldPrice}</span>
                     <h3>Por: R$${data.products[i].price}</h3>
                     <span>ou ${data.products[i].installments.count}x de R$${data.products[i].installments.value}</span>
